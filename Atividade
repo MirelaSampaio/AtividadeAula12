@@ -1,0 +1,125 @@
+//
+// Classes são semelhantes as listas e os arrays, porém, as classes são usadas pra guardar diversas informações dentro de apenas
+// um bloco, ou seja ele deixa o código mais visualmente limpo e otimizado.
+//Instancias é pegar um cópia de tudo que ta dentro da classe pra trazer para o código
+
+using Aula12Classes;
+using System.Security.AccessControl;
+
+Produto miojo = new Produto();
+miojo.nome = "Miojo Nissin";
+miojo.descricao = "Macarrão instântaneo, fica pronto em apenas 5 minutos.";
+miojo.quantidade = 10;
+miojo.preco = 3.50;
+miojo.status = true;
+miojo.mostra();
+
+Produto salgadinho = new Produto();
+salgadinho.nome = "Ruffles";
+salgadinho.descricao = "Salgadinho de batata temperado com cebola e salsa";
+salgadinho.quantidade = 10;
+salgadinho.preco = 5;
+salgadinho.status = true;
+salgadinho.mostra();
+
+Produto chocolate = new Produto();
+chocolate.nome = "Trento";
+chocolate.descricao = "Mini chocolate recheado com waffles e chocolate branco.";
+chocolate.quantidade = 12;
+chocolate.preco = 2.50;
+chocolate.status = true;
+chocolate.mostra();
+
+Console.WriteLine("Qual produto você deseja remover? Digite a posição:");
+int resposta = int.Parse(Console.ReadLine());
+if (resposta == 1)
+{
+    miojo.desativaProduto();
+}
+if (resposta == 2)
+{
+    salgadinho.desativaProduto();
+}
+if (resposta == 3)
+{
+    chocolate.desativaProduto();
+}
+Console.WriteLine("Qual produto você deseja remover? Digite a posição:");
+resposta = int.Parse(Console.ReadLine());
+if (resposta == 1)
+{
+    miojo.desativaProduto();
+}
+if (resposta == 2)
+{
+    salgadinho.desativaProduto();
+}
+if (resposta == 3)
+{
+    chocolate.desativaProduto();
+}
+
+miojo.mostra();
+salgadinho.mostra();
+chocolate.mostra();
+
+
+Console.ReadKey();
+     
+
+
+
+
+
+
+
+
+
+
+
+    //Personagem.cs
+
+
+    // Variaveis da classe (ATRIBUTOS)
+
+    //public string nome;
+    //public string raca;
+    //public int poder;
+
+    // Funções da classe (MÉTODOS)
+
+    // public void mostra()
+
+    //Console.WriteLine($"Seu personagem é um {raca}");
+    //Console.WriteLine($"Seu nome é: {nome}");
+    //Console.WriteLine($"Com poder total de {poder}");
+
+   // -----------------------------------------------------------------------------
+
+
+    //Program.cs
+
+
+    //Personagem guerreiro = new Personagem();
+    //guerreiro.nome = "Joui";
+    //guerreiro.raca = "Humano";
+    //guerreiro.poder = 170;
+    //guerreiro.mostra();
+
+    //Personagem lutador = guerreiro;
+    //lutador.nome = "Arthur";
+    //lutador.mostra();
+
+    //Personagem ocultista = new Personagem();
+    //ocultista.nome = "Agatha";
+    //ocultista.raca = "Demonio";
+    //ocultista.poder = 80;
+    //ocultista.mostra();
+
+
+    //Personagem assassino = new Personagem();
+    //assassino.nome = "Eren"; ;
+    //assassino.raca = "Titã";
+    //assassino.poder = 5000;
+    //assassino.mostra();
+
